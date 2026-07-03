@@ -6,28 +6,28 @@
 class Deptrust < Formula
   desc "Local package vulnerability checker and MCP server for AI agents"
   homepage "https://github.com/clidey/deptrust"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/clidey/deptrust/releases/download/v0.7.0/deptrust_v0.7.0_darwin_arm64.tar.gz"
-      sha256 "464e34d97243e39728ceeaaf4abd1924ef8386126dc85e2416fc2b0c4bacd21e"
+      url "https://github.com/clidey/deptrust/releases/download/v0.8.0/deptrust_v0.8.0_darwin_arm64.tar.gz"
+      sha256 "b204dfee66409cd68e1a84e3ad1b6ffc9cd27c9291db5e38dd509187a42a9746"
     end
     on_intel do
-      url "https://github.com/clidey/deptrust/releases/download/v0.7.0/deptrust_v0.7.0_darwin_amd64.tar.gz"
-      sha256 "87469365af144e6706249a4459f71b1705ee4551efd5d1c1f08184c9fbd48774"
+      url "https://github.com/clidey/deptrust/releases/download/v0.8.0/deptrust_v0.8.0_darwin_amd64.tar.gz"
+      sha256 "58a70518c0ba44f3b8e608b8e255cb7ca6b2af24afd14011155abab4d39df9eb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/clidey/deptrust/releases/download/v0.7.0/deptrust_v0.7.0_linux_arm64.tar.gz"
-      sha256 "6cfbe2ee4038a8b73cc487099496105a667895a3eba65bfe664ed7b42ab7b215"
+      url "https://github.com/clidey/deptrust/releases/download/v0.8.0/deptrust_v0.8.0_linux_arm64.tar.gz"
+      sha256 "c51d253e061ff6fa2ab0eac2210d4cbbe5214758f584eed10bdc81d5afcdbf39"
     end
     on_intel do
-      url "https://github.com/clidey/deptrust/releases/download/v0.7.0/deptrust_v0.7.0_linux_amd64.tar.gz"
-      sha256 "96c0c8f1bb8ba460b998ae31f2b73af3c4429ef4dd08634bedfbefc00733d8ed"
+      url "https://github.com/clidey/deptrust/releases/download/v0.8.0/deptrust_v0.8.0_linux_amd64.tar.gz"
+      sha256 "151eb73e686dc26d6310c8593ced44f4d7960ed2b02708b56cfbb6bb5a48c16b"
     end
   end
 
