@@ -6,33 +6,40 @@
 class Deptrust < Formula
   desc "Local package vulnerability checker and MCP server for AI agents"
   homepage "https://github.com/clidey/deptrust"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/clidey/deptrust/releases/download/v0.12.0/deptrust_v0.12.0_darwin_arm64.tar.gz"
-      sha256 "5bf9411e6eb3f198b4add48b1c0153208014a1cb481f20258048cc8e5ebc26d8"
+      url "https://github.com/clidey/deptrust/releases/download/v0.13.0/deptrust_v0.13.0_darwin_arm64.tar.gz"
+      sha256 "95720b12fa59d98273b55a95f5c768650bfc3b0bd4a421ebc93cfb4c7613865b"
     end
     on_intel do
-      url "https://github.com/clidey/deptrust/releases/download/v0.12.0/deptrust_v0.12.0_darwin_amd64.tar.gz"
-      sha256 "2e335c71665321cfc8056a5bb865b53cd2e5677202260f57ee3e56a6fb14f57c"
+      url "https://github.com/clidey/deptrust/releases/download/v0.13.0/deptrust_v0.13.0_darwin_amd64.tar.gz"
+      sha256 "d6b887e263adaf8b09fa61db83ac10d7992667933ed41b71d06ef07342af0790"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/clidey/deptrust/releases/download/v0.12.0/deptrust_v0.12.0_linux_arm64.tar.gz"
-      sha256 "e05e6be8be7ae4be5323883492866a8854aa991937f8f3ddb4e7cd48c5a9f14a"
+      url "https://github.com/clidey/deptrust/releases/download/v0.13.0/deptrust_v0.13.0_linux_arm64.tar.gz"
+      sha256 "bd99d343275bf4b73c70cc539a3531beba08b0d233abe5ef5cae56e2d2b23148"
     end
     on_intel do
-      url "https://github.com/clidey/deptrust/releases/download/v0.12.0/deptrust_v0.12.0_linux_amd64.tar.gz"
-      sha256 "6909b574d79a77ab2c123e2e1f5f87f15a57c35c1d962df5460489fa5e1a2c4e"
+      url "https://github.com/clidey/deptrust/releases/download/v0.13.0/deptrust_v0.13.0_linux_amd64.tar.gz"
+      sha256 "d0d092ad87551abde58127e5bca1f8c9b1fe36e0097ec6b44905977e0f3a012f"
     end
   end
 
   def install
     bin.install "deptrust"
+  end
+
+  def caveats
+    <<~EOS
+      To configure Codex and Claude Code with the guided setup, run:
+        deptrust setup
+    EOS
   end
 
   test do
